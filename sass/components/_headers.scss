@@ -1,0 +1,51 @@
+.main-header {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $third-color;
+}
+
+.section-header {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.178;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-header {
+    font-size: 44px;
+    line-height: 1.363;
+  }
+
+  .section-header {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.166;
+  }
+}
+
+.discription-header {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.footer-header {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $third-color;
+}

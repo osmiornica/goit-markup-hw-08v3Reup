@@ -1,0 +1,95 @@
+.hero {
+  padding: 118px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.hero.container {
+  justify-content: center;
+}
+
+
+.hero {
+  .main-header {
+    max-width: 365px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/bg_images/hero_bg_mobile.jpg);
+    background-color: $color-dark-bg;
+  }
+}
+
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg_images/hero_bg_mobile@2x.jpg);
+  }
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg_images/hero_bg_tablet.jpg);
+    background-color: $color-dark-bg;
+  }
+}
+
+
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg_images/hero_bg_tablet@2x.jpg);
+  }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    display: flex;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg_images/hero_bg_image.jpg);
+    background-color: $color-dark-bg;
+    padding: 200px 0px;
+  }
+
+  
+
+  .hero {
+    .main-header {
+      max-width: 696px;
+    }
+  }
+}

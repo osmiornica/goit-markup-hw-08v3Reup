@@ -1,0 +1,42 @@
+.services {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  .services {
+    display: block;
+  }
+}
+
+
+
+.services__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.services__item {
+  position: relative;
+}
+
+
+
+.services__label {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 27px 90px;
+  background-color: $color-services-bg;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $third-color;
+}

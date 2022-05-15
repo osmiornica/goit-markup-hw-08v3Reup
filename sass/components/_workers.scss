@@ -1,0 +1,89 @@
+.workers {
+  background-color: $color-light-bg;
+}
+
+.workers__card {
+  background-color: $third-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+
+.workers__job-title {
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $color-secondary;
+  margin-bottom: 16px;
+}
+
+
+
+.workers__card-wrapper {
+  padding: 30px 32px;
+}
+
+
+
+.social__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.social__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: $third-color;
+  fill: $color-social-icon;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $third-color;
+    background-color: $color-accent;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .workers__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .workers__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .workers__card {
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+
+
+
+@media screen and (min-width: 1200px) {
+  .workers__card {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+}
+
+
